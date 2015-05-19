@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>彩票</title>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link href="" rel="apple-touch-icon">
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="page" page-role="help">
+			<header class="page-header">
+				<h1 class="page-title"><a href="#help" class="page-nav"><i class="fa fa-angle-left fa-lg"></i>&nbsp;设置</a>帮助</h1>
+			</header>
+			<div class="page-content">
+				<script type="text/template" id="list-template">
+				      <li><a href="#help-detail/id/<%- id %>" title="<%- title %>"><span><%- title %></span><i class="fa fa-angle-right"></i></a></li>
+				</script>
+				<ul class="help-list">
+										
+				</ul>
+			</div>
+		</div>
+		<div class="page detail-container" page-role="help-detail">
+			<script type="text/template" id="detail-template">
+				<div id="detail-<%- id %>">
+					<header class="page-header">				
+						<h1 class="page-title"><a href="#help" class="page-nav">关闭</a><%- title %></h1>
+					</header>
+					<div class="page-content">
+						<%= content %>
+					</div>					
+				</div>
+			</script>			
+		</div>
+		<div class="page" page-role="order-detail">
+			<header class="page-header">
+				<h1 class="page-title"><a href="#help" class="page-nav"><i class="fa fa-angle-left fa-lg"></i>&nbsp;我的彩票</a>普通投注详情</h1>
+			</header>
+			<div class="page-content lottery-detail">
+				<article>
+					<header class="lottery-detail-header">
+						<div class="lottery-detail-desc">
+							<div class="lottery-detail-logo"><img src="images/lottery-loge.png"/></div>
+							<label class="lottery-detail-title font-big font-black">双色球</label>
+							<label class="lottery-detail-period font-small font-black">2014044期<label>
+						</div>						
+						<ol class="lottery-detail-status">
+							<li class="lottery-detail-status-col1 font-big font-black">10.00元<br/><span class="font-small font-gray">支付金额</span></li>
+							<li class="lottery-detail-status-col2 font-big font-black">未中奖<br/><span class="font-small font-gray">订单状态</span></li>
+							<li class="lottery-detail-status-col3 font-big font-black">--<br/><span class="font-small font-gray">中奖金额</span></li>
+						</ol>
+					</header>
+					<section class="lottery-detail-section">
+						<p class="page-content-paragraph lottery-bg"><label class="font-gold">开奖号码</label><span class="font-red">04</span>&nbsp;&nbsp;<span class="font-red">05</span>&nbsp;&nbsp;<span class="font-red">09</span>&nbsp;&nbsp;<span class="font-red">18</span>&nbsp;&nbsp;<span class="font-red">25</span>&nbsp;&nbsp;<span class="font-red">33</span>&nbsp;<span>:</span>&nbsp;<span class="font-blue">12</span></p>
+						<p class="page-content-paragraph"><label>选号详情</label><span>1条</span><i class="fa fa-chevron-circle-up fa-lg float-right font-lightgray"></i></p>							
+						<ul class="lottery-selected">
+							<li><label class="font-small font-gray">单式5倍</label><span class="font-normal font-red">04</span>&nbsp;&nbsp;<span class="font-normal">06</span>&nbsp;&nbsp;<span class="font-normal">08</span>&nbsp;&nbsp;<span class="font-normal">13</span>&nbsp;&nbsp;<span class="font-normal font-red">18</span>&nbsp;&nbsp;<span class="font-normal">26</span>&nbsp;<span class="font-normal">:</span>&nbsp;<span class="font-normal">11</span></li>
+						</ul>						
+						<p class="page-content-paragraph"><a href="#help-detail" title="" class="lottery-qa"><span>中奖怎么算</span><i class="fa fa-angle-right float-right"></i></a></p>
+					</section>
+					<footer class="lottery-detail-footer">
+						<p class="page-content-paragraph"><label class="font-gold">下单时间</label><span class="content-inline">2014-04-22 18:54:35</span></p>
+						<p class="page-content-paragraph"><label class="font-gold">订单编号</label><span class="content-inline">20140422185435L052</span></p>
+						<p class="page-content-paragraph"><label class="font-gold">温馨提示</label><span class="content-inline">中奖单注万元以上专人第一时间联系您，万元以下奖金自动打入盛付通帐户。</span></p>
+						<p class="page-content-paragraph lottery-delete"><a hrer="#" class="font-blue">删除本订单</a></p>
+					</footer>
+				</article>
+			</div>
+			<footer class="page-footer">
+				<div class="page-button-contanier"><a href="#single-description" class="button font-normal black">继续投注本期号码</a></div>
+				<div class="page-button-contanier"><a href="#multiple-description" class="button font-normal red">双色球投注</a></div>
+			</footer>
+		</div>		
+		<div class="page" page-role="single-description">
+			<header class="page-header">				
+				<h1 class="page-title"><a href="#help" class="page-nav">关闭</a>双色球玩法说明</h1>
+			</header>
+			<div class="page-content">
+				<article class="page-content-container">
+					<p class="page-content-paragraph"><label>开奖时间：</label><span class="content-inline">每周二、四、日21：30开奖</span></p>
+					<p class="page-content-paragraph"><label>玩法规则：</label><span class="content-inline"><span class="font-red">6个红球</span>+<span class="font-blue">1个蓝球</span>=1注（2元）</span></p>
+					<p class="page-content-paragraph"><label>奖项设置：</label></p>				
+					<div class="page-content-clear">
+						<table border="1" cellspacing="0" cellpadding="0" class="page-content-table">
+						  <tr>
+							<td>奖<br/>级</td>
+							<td>中奖条件</td>
+							<td>中奖说明</td>
+							<td>奖金</td>
+						  </tr>
+						  <tr>
+							<td>一<br/>等<br/>奖</td>
+							<td class="ico-content-space"><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-blue"></i></td>
+							<td>中6红+1蓝</td>
+							<td>浮动</td>
+						  </tr>
+						  <tr>
+							<td>二<br/>等<br/>奖</td>
+							<td class="ico-content-space"><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i></td>
+							<td>中6红</td>
+							<td>浮动</td>
+						  </tr>
+						  <tr>
+							<td>三<br/>等<br/>奖</td>
+							<td class="ico-content-space"><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-blue"></i></td>
+							<td>中5红+1蓝</td>
+							<td>3000元</td>
+						  </tr>
+						  <tr>
+							<td>四<br/>等<br/>奖</td>
+							<td class="ico-content-space"><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><br/><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-blue"></i></td>
+							<td>中5红<br/>中4红+1蓝</td>
+							<td>200元</td>
+						  </tr>
+						  <tr>
+							<td>五<br/>等<br/>奖</td>
+							<td class="ico-content-space"><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><br/><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-blue"></i></td>
+							<td>中4红<br/>中3红+1蓝</td>
+							<td>10元</td>
+						  </tr>
+						  <tr>
+							<td>六<br/>等<br/>奖</td>
+							<td class="ico-content-space"><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-blue"></i><br/><i class="fa fa-circle font-red"></i><i class="fa fa-circle font-blue"></i><br/><i class="fa fa-circle font-blue"></i></td>
+							<td>中2红+1蓝<br/>中1红+1蓝<br/>中0红+1蓝</td>
+							<td>5元</td>
+						  </tr>
+						</table>
+					</div>
+				</article>
+			</div>
+			<footer></footer>
+		</div>
+		<div class="page" page-role="multiple-description">
+			<header class="page-header">				
+				<h1 class="page-title"><a href="#help" class="page-nav">关闭</a>新快3玩法说明</h1>
+			</header>
+			<div class="page-content">
+				<article class="page-content-container">
+					<p class="page-content-paragraph"><label>开奖时间：</label>10分钟一期</p>
+					<p class="page-content-paragraph"><label>玩法规则：</label><span class="content-inline">新快3投注是指以三个号码组合为一注进行单式投注，每个投注号码为1-6共六个自然数中的任意一个，一组三个号码的组合称为一注。每注金额人民币2元</span></p>
+					<p class="page-content-paragraph"><label>奖项设置：</label></p>
+					<div class="page-content-clear">
+						<table border="1" cellspacing="0" cellpadding="0" class="page-content-table">
+						  <tr>
+							<td>奖<br/>级</td>
+							<td>中奖说明</td>
+							<td>奖金</td>
+						  </tr>
+						  <tr>
+							<td>一<br/>等<br/>奖</td>
+							<td>三同号通选：当期开奖号码的三个号码相同，即中奖</td>
+							<td>浮动</td>
+						  </tr>
+						  <tr>
+							<td>二<br/>等<br/>奖</td>
+							<td>三同号通选：当期开奖号码的三个号码相同，即中奖</td>
+							<td>浮动</td>
+						  </tr>
+						  <tr>
+							<td>三<br/>等<br/>奖</td>
+							<td>三同号通选：当期开奖号码的三个号码相同，即中奖</td>
+							<td>3000元</td>
+						  </tr>
+						  <tr>
+							<td>四<br/>等<br/>奖</td>
+							<td>三同号单选：当期开奖号码的三个号码相同,且投注号码与当期开奖号码相符，即中奖</td>
+							<td>200元</td>
+						  </tr>
+						  <tr>
+							<td>五<br/>等<br/>奖</td>
+							<td>二同号复选：当期开奖号码中有两个号码相同,且投注号码中的两个相同号码与当期开奖号码中两个相同号码相符，即中奖；</td>
+							<td>10元</td>
+						  </tr>
+						  <tr>
+							<td>六<br/>等<br/>奖</td>
+							<td>三不同号投注三不同号投注：当期开奖号码的三个号码各不相同，且投注号码与当期开奖号码全部相符，即中奖</td>
+							<td>5元</td>
+						  </tr>
+						</table>
+					</div>
+				</article>
+			</div>
+			<footer></footer>
+		</div>
+		<div class="page" page-role="about">
+			<header class="page-header">
+				<h1 class="page-title"><a href="#help" class="page-nav"><i class="fa fa-angle-left fa-lg"></i>&nbsp;设置</a>关于</h1>
+			</header>
+			<div class="page-content">
+				<div class="about-desc">
+					<img src="images/img-lottery.png" title="" alt="" class="about-pic"/>
+				</div>
+				<ul class="about-list">
+					<li><a href="#help" title=""><span>评分支持</span><i class="fa fa-angle-right"></i></a></li>
+					<li><a href="#order-detail" title=""><span>客服电话</span>0086-21-38586868<i class="fa fa-angle-right"></i></a></li>
+				</ul>
+			</div>
+			<footer></footer>
+		</div>
+	</div>
+	<script type="text/javascript" src="scripts/zepto.js"></script>
+	<script type="text/javascript" src="scripts/underscore.js"></script>
+	<script type="text/javascript" src="scripts/backbone.js"></script>
+	<script type="text/javascript" src="scripts/apps.js"></script>
+</body>
+</html>
